@@ -1,4 +1,3 @@
-require "bundler/gem_tasks"
 require File.expand_path('../lib/cequel/devise/version', __FILE__)
 
 task :default => :release
