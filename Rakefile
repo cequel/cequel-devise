@@ -11,7 +11,7 @@ task :release => [
 
 desc 'Build gem'
 task :build do
-  system 'gem build orm_adapter-cequel.gemspec'
+  system 'gem build cequel-devise.gemspec'
 end
 
 desc 'Create git release tag'
@@ -29,7 +29,7 @@ end
 
 desc 'Push gem to repository'
 task :push do
-  system "gem push orm_adapter-cequel-#{Cequel::Devise::VERSION}.gem"
+  system "gem push cequel-devise-#{Cequel::Devise::VERSION}.gem"
 end
 
 task 'Remove packaged gems'
